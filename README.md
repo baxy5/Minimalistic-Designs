@@ -1,2 +1,3 @@
 # Minimalistic-Designs
-Practicing minimalistic design.
+## Practicing minimalistic design.
+Landing designs, animation etc.
