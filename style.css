@@ -19,6 +19,16 @@ body {
   height: 100%;
 }
 
+.background-text {
+  position: absolute;
+  font-size: 40vw;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  color: #1e1b1b;
+  text-shadow: 0px 0px 2px #fff;
+}
+
 /* NAVBAR */
 .navbar-container {
   width: 100%;
