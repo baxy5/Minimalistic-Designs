@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  background-color: #31b456;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+
+.left-nav {
+  width: 100%;
+}
+
+.title {
+  background-color: #50fc80;
+  max-width: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 35px;
+  padding: 15px;
+}
+
+.right-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.right-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 15px;
+}
+
+.right-nav li {
+  margin-right: 100px;
+}
+
+.right-nav a {
+  text-decoration: none;
+  font-size: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+.right-nav a::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 3px;
+  transform: scale(0);
+  transition: transform ease-in-out 0.3s;
+}
+
+.right-nav a:hover::after {
+  transform: scale(1);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.text {
+  width: 100%;
+}
+
+.text h1 {
+  max-width: 550px;
+  font-size: 69px;
+}
+
+.text p {
+  font-size: 26px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image img {
+  border-radius: 76% 24% 59% 41% / 51% 62% 38% 49%;
+  position: absolute;
+  top: 100px;
+  right: -400px;
+  /* width="950" height="auto" */
+  height: auto;
+  width: 80%;
+}
+
+.spacer {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(./layered-peaks-haikei.svg);
+}
+
+@media all and (max-width: 1530px) {
+  .hero {
+    margin-top: 100px;
+    flex-wrap: wrap-reverse;
+  }
+
+  .image img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .text {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
